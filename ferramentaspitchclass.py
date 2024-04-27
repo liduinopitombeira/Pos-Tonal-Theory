@@ -56,8 +56,9 @@ def T(conjunto, fator):
 
 
 #Inversão TnI em torno de 0 e dá o resultado na forma normal
+
 def I(conjunto, fator):
-    
+
     inv = [((12-x) + fator)%12 for x in conjunto]
     return normal(inv)
 
