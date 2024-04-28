@@ -8,6 +8,17 @@ Created on Sun Jan 22 11:19:19 2023
 from music21 import *
 from itertools import *
 
+#Calcula a paleta de uma classe de conjuntos
+def paleta(classe):
+    
+            
+    paletaT = [normal([(y+x)%12 for y in classe]) for x in range(12)]
+    paletaI = [normal([(12-y+x)%12 for y in classe]) for x in range(12)]
+    
+    paleta = set(map(tuple, paletaT + paletaI))
+    
+    return paleta
+
 
 #Calcula forma prima
 def prime(conjunto):
@@ -56,7 +67,6 @@ def T(conjunto, fator):
 
 
 #Inversão TnI em torno de 0 e dá o resultado na forma normal
-
 def I(conjunto, fator):
 
     inv = [((12-x) + fator)%12 for x in conjunto]
