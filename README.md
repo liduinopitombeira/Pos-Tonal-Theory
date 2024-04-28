@@ -2,11 +2,11 @@
 
 A repository of very simple tools written in Pyhon for post-tonal theory.
 
-O script ferramentaspitchclass.py contempla as seguintes funções
+The script ferramentaspitchclass.py has the following functions
 
     Paleta Tn/TnI
-    Forma prima
-    Forma normal
-    Vetor intervalar
-    Transposição (Tn)
-    Inversão em torno de 0 (TnI)
+    Prime form
+    Normal form
+    Interval class vetor
+    Transposition (Tn)
+    Inversion around C (TnI)
